@@ -3,6 +3,13 @@
     ---
     Main footer of the website
 */
+.c-logo{
+    height:32px;
+}
+
+.c-logo__symbol{
+    height:100%
+}
 
 .c-footer {
 }
@@ -14,6 +21,9 @@
 }
 
 @media (min-width: 768px) {
+    .c-logo{
+        height:40px;
+    }
     .c-footer {
     }
 
