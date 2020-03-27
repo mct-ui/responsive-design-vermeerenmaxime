@@ -6,6 +6,30 @@
   #GENERIC
 \*------------------------------------*/
 
+
+@font-face{
+    font-family:"HK Grotesk Web";
+    font-weight:200;
+    src:url("../fonts/hkgrotesk-light-webfont.woff2") format("woff2")
+        url("../fonts/hkgrotesk-light-webfont.woff") format("woff");
+}
+
+@font-face{
+    font-family:"HK Grotesk Web";
+    font-weight:400;
+    src:url("../fonts/hkgrotesk-regular-webfont.woff2") format("woff2")
+        url("../fonts/hkgrotesk-regular-webfont.woff") format("woff");
+}
+@font-face{
+    font-family:"HK Grotesk Web";
+    font-weight:500;
+    src:url("../fonts/hkgrotesk-medium-webfont.woff2") format("woff2")
+        url("../fonts/hkgrotesk-medium-webfont.woff") format("woff");
+}
+/* Primary color: #5051DB
+Primary color dark: #3E3EA8
+Neutral dark color: #202024 */
+
 /*
     Generic: Page
     ---
@@ -15,8 +39,8 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Helvetica, arial, sans-serif;
-    color: #111;
+    font-family:"HK Grotesk Web", Helvetica, arial, sans-serif;
+    color: #202024;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -36,7 +60,7 @@ html {
  */
 
 ::selection {
-    background: #e85e00;
+    background:#5051DB;
     color: white;
     text-shadow: none;
 }
@@ -50,6 +74,7 @@ html {
     ---
     Default markup for images to make them responsive
 */
+
 
 img {
     max-width: 100%;
@@ -66,18 +91,21 @@ h1 {
     font-size: 36px;
     line-height: 48px;
     margin: 0 0 24px;
+    font-weight:200px;
 }
 
 h2 {
     font-size: 32px;
     line-height: 40px;
     margin: 0 0 24px;
+    font-weight:200px;
 }
 
 h3 {
     font-size: 26px;
     line-height: 32px;
     margin: 0 0 24px;
+    font-weight:200px;
 }
 
 h4,
@@ -136,13 +164,13 @@ hr {
 }
 
 a {
-    color: RoyalBlue;
+    color:#5051DB;
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: BlueViolet;
+    color:#3E3EA8;
 }
 
 a:hover,
@@ -194,7 +222,8 @@ a:focus {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 90em; /* 90 * 16px = 1440px */
+    max-width:70.5em;
+    /* max-width: 90em; 90 * 16px = 1440px */
 }
 
 /*
@@ -448,6 +477,10 @@ a:focus {
 }
 
 @media (min-width: 768px) {
+    html{
+        font-size:20px;
+        line-height:1.6;
+    }
     .u-1-of-2-bp2 {
         flex-basis: calc(100% / 2) !important;
     }
