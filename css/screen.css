@@ -440,12 +440,15 @@ a:focus {
 
 
 .c-title-icon{
-    height:80px;
-    align-content: flex-start;
+    height:5.5em;
+    display:flex;
+    margin-bottom:50px;
 }
 
 .c-title-icon__icon{
     height:100%;
+    margin-right:35px;
+
 }
 
 
