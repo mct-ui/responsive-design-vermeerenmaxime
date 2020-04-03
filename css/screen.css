@@ -429,7 +429,23 @@ a:focus {
     }
     .c-logo{
         height:40px;
-    }
+    }s
+}
+
+/*
+    Component: Title icon
+    ---
+    Special type of title with icon
+*/
+
+
+.c-title-icon{
+    height:80px;
+    align-content: flex-start;
+}
+
+.c-title-icon__icon{
+    height:100%;
 }
 
 
