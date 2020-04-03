@@ -217,6 +217,7 @@ a:focus {
 
 
 @media (min-width: 768px) {
+    
     .o-row {
         padding-left: 48px;
         padding-right: 48px;
@@ -230,6 +231,7 @@ a:focus {
         padding-top:48px;
         padding-bottom:24px;
     }
+
 }
 
 /*
@@ -504,6 +506,7 @@ a:focus {
         padding:8px 16px;
         box-sizing:border-box;
     }
+
 }
 
 .c-link-cta{
@@ -663,15 +666,21 @@ a:focus {
     display:none;
 }
 
-@media (min-width: 992px) {
+  /* Large devices (landscape tablets, desktops, 992px and up) */
+  @media (min-width: 992px) {
+    html{
+        font-weight: 400;
+
+    }
+
     .c-header {
-        display:inline-flex;
-        align-items:center;
-        justify-content: space-evenly
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .c-header__nav {
-        display:block;
+        display: block;
     }
 }
 
